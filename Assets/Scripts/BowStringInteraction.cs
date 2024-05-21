@@ -31,7 +31,7 @@ public class BowStringInteraction : XRBaseInteractable
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-        stringInteractor = args.interactor;
+        stringInteractor = args.interactorObject as XRBaseInteractor;
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)

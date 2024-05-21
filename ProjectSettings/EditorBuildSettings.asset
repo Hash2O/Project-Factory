@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Swimming Pool.unity
+    guid: bfaf973003c1cbd4db7d449f09b2ae46
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6d61f20eac1bf704aa42e8abeab5c14c,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 7800f2dd157ba3f4b93baf31618cba95,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b760360fb61b3e245a226f6c0118db4f,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c7e8cc3c67196cf4096cb6619351718f,

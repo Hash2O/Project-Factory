@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Portal 1
   - Portal 2
+  - ToothPaste
+  - Terrain
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,6 @@ public class BoussoleManager : MonoBehaviour
     void Start()
     {
         yAxis = 0f;
-
     }
 
     // Update is called once per frame

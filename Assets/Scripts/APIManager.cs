@@ -25,14 +25,16 @@ public class APIManager : MonoBehaviour
     [SerializeField] SailingWindSimulationManager boat;
 
     [SerializeField] BoussoleManager boussole;
+
     // Start is called before the first frame update
+    [System.Obsolete]
     private void Start()
     {
         CallURL();
         
     }
 
-
+    [System.Obsolete]
     public void CallURL()
     {
         //StartCoroutine(GetRequest(requestURL);
@@ -50,6 +52,7 @@ public class APIManager : MonoBehaviour
         StartCoroutine(GetRequest(requestURL + "?" + queryString)); //Format de la demande avec queryString
     }
 
+    [System.Obsolete]
     IEnumerator GetRequest(string uri)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
@@ -177,7 +180,7 @@ public class APIManager : MonoBehaviour
         //Application du modif sur la vitesse de base.
         //NB : chaque appel crée une nouvelle valeur qui s'ajoute à la précédente...
         //Remédier à ca : 
-        boat.windPower = boat.windPower * windPowerModifier;
+        boat.windPower *= windPowerModifier;
 
         //Reste à trouver la bonne formule pour appliquer cette force dans la bonne direction
     }

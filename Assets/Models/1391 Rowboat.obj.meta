@@ -3,7 +3,12 @@ guid: 1d15808d5048310419ada02e76eef2a8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RowboatMat
+    second: {fileID: 2100000, guid: b93b9ea070991c04c9d6bc68922bdd8a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (_isPauseMenuActive)
         {
-            _pauseMenu.SetActive(false);
+                DisableMainMenu();
             _isPauseMenuActive = false;
         }
     }
@@ -55,6 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     private void AdjustVolume()
     {
+        Debug.Log("Adjusting Volume...");
         _volumeMixer.SetFloat("BG_Music", _volumeSlider.value);
     }
 

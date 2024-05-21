@@ -16,6 +16,7 @@ public class PauseFunction : MonoBehaviour
     private void OnDisable()
     {
         Debug.Log("Disabled");
+        //Time is going 5xtimes slower than "normal" time
         Time.timeScale = 1.0f;
     }
 
